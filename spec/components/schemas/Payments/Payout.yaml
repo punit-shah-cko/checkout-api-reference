@@ -115,7 +115,7 @@ properties:
     properties:
       senderInformation:
         type: object
-        description: Allows you to send <a href="https://docs.checkout.com/payment-actions/pay-out-to-a-card/sender-data-for-payouts" target="_blank">additional data</a> required for Visa Direct Original Credit Transaction (OCT) and Mastercard Moneysend payments. Only required when sending transactions on behalf of another person or business.
+        description: Allows you to send additional data required for Visa Direct Original Credit Transaction (OCT) and Mastercard Moneysend payments. Only required when sending transactions on behalf of another person or business. <a href="https://docs.checkout.com/payment-actions/pay-out-to-a-card/sender-data-for-payouts" target="_blank">See our documentation for specific requirements</a>.
         properties:
           reference:
             type: string
@@ -149,6 +149,10 @@ properties:
             type: string
             description: The address country.
             maxLength: 2
+          postalCode:
+            type: string
+            description: The post/zip code.<br><i>Only required for Mastercard transactions</i>.
+            maxLength: 10
           sourceOfFunds:
             type: string
             description: The source of the funds.
