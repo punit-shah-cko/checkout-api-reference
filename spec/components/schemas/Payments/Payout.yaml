@@ -147,7 +147,7 @@ properties:
             maxLength: 3
           country:
             type: string
-            description: The address country.
+            description: The address country (two-letter <a href="https://docs.checkout.com/resources/codes/country-codes" target="_blank">ISO country code</a>).
             maxLength: 2
           postalCode:
             type: string
