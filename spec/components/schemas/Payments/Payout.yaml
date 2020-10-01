@@ -149,7 +149,7 @@ properties:
             maxLength: 25
           state:
             type: string
-            description: The address state.
+            description: The state or province of the address country (<a href="https://en.wikipedia.org/wiki/ISO_3166-2" target="_blank">ISO 3166-2 code</a> of up to three alphanumeric characters).
             maxLength: 3
           country:
             type: string
