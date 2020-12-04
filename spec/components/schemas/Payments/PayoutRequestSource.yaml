@@ -1,12 +1,9 @@
 type: object
-description: The source of the payment
+description: The source of the payout
 discriminator:
   propertyName: type
   mapping:
-    token: '#/components/schemas/01_PaymentRequestTokenSource'
-    id: '#/components/schemas/02_PaymentRequestIdSource'
-    card: '#/components/schemas/03_PaymentRequestCardSource'
-    network_token: '#/components/schemas/04_PaymentRequestNetworkTokenSource'
+    currency_account: '#/components/schemas/05_PaymentRequestCurrencyAccountSource'
 required:
   - type
 properties:
