@@ -5,7 +5,7 @@ properties:
     type: string
     description: An optional description of the payout purpose, for example `Insurance claim` or `Remittance`
     example: "Remittance"
-  desired_value_date:
+  desired_value_date_behavior:
     type: string
     description: The date (in ISO 8601 format) on which the recipient's account will be credited
   desired_value_behavior:
