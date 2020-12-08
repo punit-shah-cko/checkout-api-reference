@@ -1049,7 +1049,7 @@ code span {
   --sidebar-option: var(--S1000);
   --sidebar-option-hover: var(--cko-contrast-gray);
   --url-area: var(--S1000);
-  --sample-selector-background: var(--S1000);
+  --sample-selector-background: var(--S10);
   --sample-selector-text: var(--S00);
   --code-text-color: var(--S700);
 }
@@ -1519,12 +1519,8 @@ span.sc-fzoVTD.heGpRL, .sc-fzoJus.hHgrjJ {
   font-weight: bold;
 }
 
-/*span.sc-fzpmMD.gBfPiy.dropdown-selector-value, span.sc-fzpmMD.kgBWAC.dropdown-selector-value {
-  color: var(--sample-selector-text) !important; 
-}*/
-
 .iFDKZT.iFDKZT .dropdown-arrow {
-  border-top-color: var(--sample-selector-text)!important;
+  border-top-color: var(--source-selector-text)!important;
 }
 
 span.sc-fznWOq.mcMLk.dropdown-selector-content {
