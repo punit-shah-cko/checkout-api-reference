@@ -22,7 +22,6 @@ properties:
     enum:
       - OUR
       - SHA
-      - BEN
   repair:
     type: boolean
     description: Determines whether the payout details can be modified to prevent a payout from being returned
