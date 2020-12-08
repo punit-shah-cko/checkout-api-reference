@@ -3,9 +3,9 @@ description: Information about the sender of the payout's funds
 discriminator:
   propertyName: type
   mapping:
-    individual: '#/components/schemas/01_IndividualSender'
-    corporate: '#/components/schemas/02_CorporateSender'
-    instrument: '#/components/schemas/03_InstrumentSender'
+    individual: '#/components/schemas/01_PaymentRequestIndividualSender'
+    corporate: '#/components/schemas/02_PaymentRequestCorporateSender'
+    instrument: '#/components/schemas/03_PaymentRequestInstrumentSender'
 required:
   - type
 properties:
@@ -16,7 +16,6 @@ properties:
       - corporate
       - instrument
     description: The type of sender
-
   reference:
     type: string
     description: The sender's reference for the payout
