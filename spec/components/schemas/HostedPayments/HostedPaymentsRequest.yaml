@@ -80,6 +80,8 @@ properties:
             description: 'Minor units. Includes tax, excludes discounts. (Max value: 100000000)'
             minimum: 0
             maximum: 100000000
+  risk:
+    $ref: '#/components/schemas/RiskRequest'
   success_url:
     type: string
     format: uri
