@@ -24,7 +24,7 @@ properties:
   description:
     type: string
     description: A description of the payment
-    example: test payment
+    example: Payment for Gold Necklace
   customer:
     type: object
     description: The customer's details
@@ -74,7 +74,7 @@ properties:
           name:
             type: string
             description: Descriptive item name
-            example: test item
+            example: Gold Necklace
           quantity:
             type: integer
             description: The item quantity. Non-negative
