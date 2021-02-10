@@ -13,3 +13,31 @@ properties:
     description: The Checkout.com token
     pattern: ^(tok)_(\w{26})$ | ^(card_tok)_(\w{12})$
     example: tok_asoto22g2fsu7prwomy12sgfsa
+  customer:
+    type: object
+    description: The customer's details
+    properties:
+      id:
+        type: string
+        pattern: "^(cus)_(\\w{26})$"
+        description: |
+          The identifier of an existing customer. If neither customer `id` nor `email` is provided, then 
+          a new customer will be registered
+        example: "cus_y3oqhf46pyzuxjbcn2giaqnb44"
+      email:
+        type: string
+        format: email
+        description: An optional email address to associate with the customer
+        maxLength: 255
+        example: "jokershere@gmail.com"
+      name:
+        type: string
+        description: The customer's name. This will only set the name for *new* customers
+        maxLength: 255
+        example: "Jack Napier"
+      default:
+        type: boolean
+        description: If true, sets this instrument as the default for the customer (if a new customer is created as a result of this request, the instrument will automatically be the default)
+        default: false
+        example: true
+  
