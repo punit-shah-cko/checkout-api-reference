@@ -3,7 +3,7 @@ post:
     - ApiSecretKey: []
   tags:
     - Customers
-  summary: Create customer
+  summary: Create a customer
   operationId: createCustomer
   description: Create a customer which can be linked to one or more payment instruments, and can be passed as a source when making a payment, using the customer’s default instrument.
   requestBody:

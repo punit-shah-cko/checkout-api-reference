@@ -39,7 +39,7 @@ get:
     - ApiSecretKey: []
   tags:
     - Customers
-  summary: Returns details of a customer and their instruments
+  summary: Get customer details
   operationId: getCustomerDetails
   description: Returns details of a customer and their instruments
   parameters:
@@ -72,8 +72,8 @@ delete:
     - ApiSecretKey: []
   tags:
     - Customers
-  summary: Delete a customer and all of their linked payment instruments
-  operationId: removeInstrument
+  summary: Delete a customer
+  operationId: deleteCustomerDetails
   description: Delete a customer and all of their linked payment instruments
   parameters:
     - in: path

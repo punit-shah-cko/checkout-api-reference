@@ -21,8 +21,7 @@ properties:
             - $ref: '#/components/schemas/PhoneNumber'
     metadata:
         type: object
-        title: The Metadata schema
-        description: Allows you to store additional information about the customer
+        description: Allows you to store additional information about a customer with custom fields and up to five user-defined fields (`udf1` to `udf5`), which can be used for reporting purposes. `udf1` is also used for some of our risk rules.
         example:
             coupon_code: "NY2018"
             partner_id: 123989
