@@ -13,6 +13,18 @@ properties:
     description: The Checkout.com token
     pattern: ^(tok)_(\w{26})$ | ^(card_tok)_(\w{12})$
     example: tok_asoto22g2fsu7prwomy12sgfsa
+  account_holder:
+      type: object
+      description: The account holder details
+      properties:
+          billing_address:
+              description: The billing address of the account holder
+              allOf:
+                - $ref: "#/components/schemas/Address"
+          phone:
+              description: The phone number of the account holder
+              allOf:
+                  - $ref: "#/components/schemas/Phone"
   customer:
     type: object
     description: The customer's details

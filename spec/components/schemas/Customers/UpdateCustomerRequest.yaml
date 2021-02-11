@@ -13,3 +13,14 @@ properties:
         description: The instrument ID for this customer’s default instrument
         type: string
         example: src_imu3wifxfvlebpqqq5usjrze6y
+    phone:
+        type: object
+        description: The customer's phone number
+        allOf:
+            - $ref: '#/components/schemas/PhoneNumber'
+    metadata:
+        type: object
+        description: Allows you to store additional information about the customer
+        example:
+            coupon_code: "NY2018"
+            partner_id: 123989

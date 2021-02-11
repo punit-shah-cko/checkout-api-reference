@@ -6,6 +6,7 @@ required:
   - expiry_year
   - last4
   - bin
+  - fingerprint
 properties:
     id:
         description: The unique identifier of the payment source or destination that can be used later for payments
@@ -75,3 +76,23 @@ properties:
         type: string
         description: The issuer/card scheme product type
         example: CLASSIC
+    fingerprint:
+        type: string
+        description: A token that can uniquely identify this instrument across all customers
+    customer: 
+        type: object
+        description: The customer details
+        properties:
+            id:
+                type: string
+                description: The customer's unique identifier
+                example: "cus_y3oqhf46pyzuxjbcn2giaqnb44"
+            email: 
+                type: string
+                format: email
+                description: The customer's email address
+                example: JohnTest@test.com
+            name:
+                type: string
+                description: The customer's name
+                example: Jack Napier
