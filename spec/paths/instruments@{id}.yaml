@@ -100,5 +100,3 @@ delete:
       description: Unauthorized
     '404':
       description: Instrument not found or not associated with client
-    '500':
-      description: Internal Error
