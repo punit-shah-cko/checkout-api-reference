@@ -20,7 +20,7 @@ properties:
             - $ref: '#/components/schemas/PhoneNumber'
     metadata:
         type: object
-        description: Allows you to store additional information about the customer
+        description: Allows you to store additional information about a customer
         example:
             coupon_code: "NY2018"
             partner_id: 123989

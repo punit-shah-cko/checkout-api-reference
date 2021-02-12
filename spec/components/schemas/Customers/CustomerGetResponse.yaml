@@ -28,13 +28,13 @@ properties:
             - $ref: '#/components/schemas/PhoneNumber'
     metadata:
         type: object
-        description: A set of key-value pairs that is attached to a customer.
+        description: A set of key-value pairs that is attached to a customer
         example:
             coupon_code: "NY2018"
             partner_id: 123989
     instruments:
         type: array
         title: Instrument
-        description: The details of instruments linked to this customer.
+        description: The details of instruments linked to this customer
         items:
             $ref: '#/components/schemas/CustomerGetInstrumentResponse'

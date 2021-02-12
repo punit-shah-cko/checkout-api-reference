@@ -16,6 +16,9 @@ properties:
         description: The underlying instrument type (for instruments created from Checkout.com tokens, this will reflect the type of instrument that was tokenized)
         type: string
         example: "card"
+    fingerprint:
+        type: string
+        description: A token that can uniquely identify this instrument across all customers
     expiry_month:
         type: integer
         description: The expiry month
@@ -76,9 +79,6 @@ properties:
         type: string
         description: The issuer/card scheme product type
         example: CLASSIC
-    fingerprint:
-        type: string
-        description: A token that can uniquely identify this instrument across all customers
     customer: 
         type: object
         description: The customer details
